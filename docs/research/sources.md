@@ -33,3 +33,25 @@
 [S-010] Chawla S, et al. (2020). The Effect of Low-Fat and Low-Carbohydrate Diets on Weight Loss and Lipid Levels: A Systematic Review and Meta-Analysis. Nutrients. Тип: мета-анализ. https://www.mdpi.com/2072-6643/12/12/3774
 
 [S-011] Aljuraiban GS / Gardner CD, et al. (2023). Association of dietary adherence and dietary quality with weight loss success... (secondary analysis of DIETFITS). Am J Clin Nutr. Тип: РКИ (вторичный анализ). https://ajcn.nutrition.org/article/S0002-9165(23)66235-5/fulltext Note: сверить первого автора.
+
+## Волна 2 (T5–T11)
+
+[S-012] Wycherley TP, et al. (2012). Effects of energy-restricted high-protein, low-fat compared with standard-protein, low-fat diets: a meta-analysis of randomized controlled trials. Am J Clin Nutr. Тип: мета-анализ (24 РКИ). https://ajcn.nutrition.org/article/S0002-9165(23)02940-4/fulltext
+
+[S-013] Leidy HJ, et al. (2015). The role of protein in weight loss and maintenance. Am J Clin Nutr. Тип: обзор. https://ajcn.nutrition.org/article/S0002-9165(23)27427-4/fulltext
+
+[S-014] (2022). Low glycaemic index and glycaemic load diets in adults with excess weight: Systematic review and meta-analysis of randomised clinical trials. Тип: мета-анализ (19 РКИ). https://pubmed.ncbi.nlm.nih.gov/35546475/ Note: сверить авторов/журнал.
+
+[S-015] Thompson SV, et al. / (2022–23). Effects of isolated soluble fiber supplementation on body weight, glycemia, and insulinemia in adults with overweight and obesity: a systematic review and meta-analysis of RCTs. Am J Clin Nutr. Тип: мета-анализ. https://ajcn.nutrition.org/article/S0002-9165(22)02702-2/fulltext Note: сверить первого автора.
+
+[S-016] Hall KD, et al. (2019). Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake. Cell Metabolism. Тип: РКИ (стационар). https://pmc.ncbi.nlm.nih.gov/articles/PMC7946062/
+
+[S-017] Ello-Martin JA, Roe LS, Ledikwe JH, Beach AM, Rolls BJ. (2007). Dietary energy density in the treatment of obesity: a year-long trial comparing 2 weight-loss diets. Am J Clin Nutr. Тип: РКИ. https://pmc.ncbi.nlm.nih.gov/articles/PMC2018610/
+
+[S-018] Rolls BJ. (2017). Dietary energy density: Applying behavioural science to weight management. Nutrition Bulletin. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC5687574/
+
+[S-019] Malik VS, et al. (2013). Sugar-sweetened beverages and weight gain in children and adults: a systematic review and meta-analysis. Am J Clin Nutr. Тип: мета-анализ (когорты+РКИ). https://pmc.ncbi.nlm.nih.gov/articles/PMC3778861/
+
+[S-020] Ebbeling CB, et al. (2012). A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight. N Engl J Med. Тип: РКИ. https://www.nejm.org/doi/full/10.1056/NEJMoa1203388
+
+[S-021] Nguyen M, et al. (2023). Sugar-sweetened beverage consumption and weight gain in children and adults: a systematic review and meta-analysis of prospective cohort studies and RCTs. Am J Clin Nutr. Тип: мета-анализ. https://ajcn.nutrition.org/article/S0002-9165(22)10529-0/fulltext
