@@ -75,3 +75,25 @@
 [S-029] Huang RY, et al. (2016). Vegetarian Diets and Weight Reduction: a Meta-Analysis of Randomized Controlled Trials. J Gen Intern Med. Тип: мета-анализ (12 РКИ). https://pmc.ncbi.nlm.nih.gov/articles/PMC4699995/
 
 [S-030] Bueno NB, et al. (2013). Very-low-carbohydrate ketogenic diet v. low-fat diet for long-term weight loss: a meta-analysis of randomised controlled trials. Br J Nutr. Тип: мета-анализ (13 РКИ). https://pubmed.ncbi.nlm.nih.gov/23651522/
+
+## Волна 4 (T16–T22)
+
+[S-031] Tasali E, et al. (2022). Effect of Sleep Extension on Objectively Assessed Energy Intake Among Adults With Overweight in Real-life Settings: A Randomized Clinical Trial. JAMA Intern Med. Тип: РКИ. https://pmc.ncbi.nlm.nih.gov/articles/PMC8822469/
+
+[S-032] Zhu B, et al. (2019). Effects of sleep restriction on metabolism-related parameters in healthy adults: A comprehensive review and meta-analysis of randomized controlled trials. Sleep Med Rev. Тип: мета-анализ. https://www.sciencedirect.com/science/article/abs/pii/S1087079218301941
+
+[S-033] (2023). The Association of Emotional Eating with Overweight/Obesity, Depression, Anxiety/Stress, and Dietary Patterns: A Review of the Current Clinical Evidence. Nutrients. Тип: обзор. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10005347/ Note: сверить авторов.
+
+[S-034] Daubenmier J, et al. (2011). Mindfulness Intervention for Stress Eating to Reduce Cortisol and Abdominal Fat among Overweight and Obese Women. J Obes. Тип: РКИ (exploratory). https://onlinelibrary.wiley.com/doi/10.1155/2011/651936
+
+[S-035] Davis CD. (2016). The Gut Microbiome and Its Role in Obesity. Nutr Today. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC5082693/
+
+[S-036] Dennis EA, et al. (2010). Water Consumption Increases Weight Loss During a Hypocaloric Diet Intervention in Middle-aged and Older Adults. Obesity. Тип: РКИ. https://onlinelibrary.wiley.com/doi/full/10.1038/oby.2009.235
+
+[S-037] Parretti HM, et al. (2015). Efficacy of water preloading before main meals as a strategy for weight loss in primary care patients with obesity: RCT. Obesity. Тип: РКИ. https://onlinelibrary.wiley.com/doi/full/10.1002/oby.21167
+
+[S-038] Kwok A, et al. (2019). Effect of alcohol consumption on food energy intake: a systematic review and meta-analysis. Br J Nutr. Тип: мета-анализ. https://pubmed.ncbi.nlm.nih.gov/30630543/
+
+[S-039] Traversy G, Chaput JP. (2015). Alcohol Consumption and Obesity: An Update. Curr Obes Rep. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC4338356/
+
+[S-040] Hollands GJ, et al. (2015). Portion, package or tableware size for changing selection and consumption of food, alcohol and tobacco. Cochrane Database Syst Rev. Тип: Cochrane (72 РКИ). https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011045.pub2/full
