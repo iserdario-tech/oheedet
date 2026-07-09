@@ -55,3 +55,23 @@
 [S-020] Ebbeling CB, et al. (2012). A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight. N Engl J Med. Тип: РКИ. https://www.nejm.org/doi/full/10.1056/NEJMoa1203388
 
 [S-021] Nguyen M, et al. (2023). Sugar-sweetened beverage consumption and weight gain in children and adults: a systematic review and meta-analysis of prospective cohort studies and RCTs. Am J Clin Nutr. Тип: мета-анализ. https://ajcn.nutrition.org/article/S0002-9165(22)10529-0/fulltext
+
+## Волна 3 (T12–T15)
+
+[S-022] Liu D, et al. (2022). Calorie Restriction with or without Time-Restricted Eating in Weight Loss. N Engl J Med. Тип: РКИ. https://www.nejm.org/doi/full/10.1056/NEJMoa2114833
+
+[S-023] (2024). Is isocaloric intermittent fasting superior to calorie restriction? A systematic review and meta-analysis of RCTs. Nutr Metab Cardiovasc Dis. Тип: мета-анализ (20 РКИ). https://www.sciencedirect.com/science/article/pii/S0939475324004393 Note: сверить авторов.
+
+[S-024] (2025). Intermittent fasting strategies vs continuous energy restriction for weight loss: систематический обзор и сетевой мета-анализ (~99 РКИ). BMJ. Тип: сетевой мета-анализ. Note: сверить точный URL/авторов/год.
+
+[S-025] Sievert K, et al. (2019). Effect of breakfast on weight and energy intake: systematic review and meta-analysis of randomised controlled trials. BMJ. Тип: мета-анализ. https://pmc.ncbi.nlm.nih.gov/articles/PMC6352874/
+
+[S-026] Vujović N, et al. (2022). Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity. Cell Metabolism. Тип: РКИ (кросс-овер). https://pmc.ncbi.nlm.nih.gov/articles/PMC10184753/
+
+[S-027] Garaulet M, et al. (2013). Timing of food intake predicts weight loss effectiveness. Int J Obes (Lond). Тип: наблюдательное (проспективное, 20 нед). Note: сверить URL/DOI.
+
+[S-028] Mancini JG, et al. (2016). Systematic Review of the Mediterranean Diet for Long-Term Weight Loss. Am J Med. Тип: систематический обзор (5 РКИ). https://www.amjmed.com/article/S0002-9343(15)30027-9/fulltext
+
+[S-029] Huang RY, et al. (2016). Vegetarian Diets and Weight Reduction: a Meta-Analysis of Randomized Controlled Trials. J Gen Intern Med. Тип: мета-анализ (12 РКИ). https://pmc.ncbi.nlm.nih.gov/articles/PMC4699995/
+
+[S-030] Bueno NB, et al. (2013). Very-low-carbohydrate ketogenic diet v. low-fat diet for long-term weight loss: a meta-analysis of randomised controlled trials. Br J Nutr. Тип: мета-анализ (13 РКИ). https://pubmed.ncbi.nlm.nih.gov/23651522/
