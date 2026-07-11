@@ -111,3 +111,15 @@
 [S-045] Sumithran P, et al. (2011). Long-Term Persistence of Hormonal Adaptations to Weight Loss. N Engl J Med. Тип: интервенционное (50 чел, 62 нед). https://www.nejm.org/doi/full/10.1056/NEJMoa1105816
 
 [S-046] (2021). The Influence of Mindful Eating and/or Intuitive Eating Approaches on Dietary Intake: A Systematic Review. J Acad Nutr Diet. Тип: систематический обзор. https://www.sciencedirect.com/science/article/abs/pii/S2212267220313903 Note: сверить авторов/год.
+
+## Волна 6 (T28–T31)
+
+[S-047] Fothergill E, et al. (2016). Persistent metabolic adaptation 6 years after "The Biggest Loser" competition. Obesity. Тип: наблюдательное (follow-up). https://onlinelibrary.wiley.com/doi/full/10.1002/oby.21538
+
+[S-048] Martin CK, et al. (2020). Metabolic adaptation is not a major barrier to weight-loss maintenance. Am J Clin Nutr. Тип: интервенционное/анализ. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7458773/
+
+[S-049] Thomas JG, Bond DS, Phelan S, Hill JO, Wing RR. (2014). Weight-Loss Maintenance for 10 Years in the National Weight Control Registry. Am J Prev Med. Тип: когорта (NWCR). https://pubmed.ncbi.nlm.nih.gov/24355667/
+
+[S-050] Zeevi D, et al. (2015). Personalized Nutrition by Prediction of Glycemic Responses. Cell. Тип: когорта/интервенционное. https://www.wisdom.weizmann.ac.il/~eran/zeevi_cell_2015.pdf Note: сверить стабильный URL (Cell/DOI).
+
+[S-051] Livingstone KM, et al. (2016). FTO genotype and weight loss in diet and lifestyle interventions: a systematic review and meta-analysis of randomized controlled trials. BMJ. Тип: мета-анализ. https://pmc.ncbi.nlm.nih.gov/articles/PMC4807705/
