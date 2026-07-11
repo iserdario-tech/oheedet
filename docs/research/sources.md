@@ -123,3 +123,23 @@
 [S-050] Zeevi D, et al. (2015). Personalized Nutrition by Prediction of Glycemic Responses. Cell. Тип: когорта/интервенционное. https://www.wisdom.weizmann.ac.il/~eran/zeevi_cell_2015.pdf Note: сверить стабильный URL (Cell/DOI).
 
 [S-051] Livingstone KM, et al. (2016). FTO genotype and weight loss in diet and lifestyle interventions: a systematic review and meta-analysis of randomized controlled trials. BMJ. Тип: мета-анализ. https://pmc.ncbi.nlm.nih.gov/articles/PMC4807705/
+
+## Волна 7 (T32–T37)
+
+[S-052] CDC / NHS / NICE (guidance). Safe rate of weight loss ~0.5–1 kg/нед (дефицит ~500–600 ккал/д); VLCD <800 ккал/д только под контролем врача. Тип: гайдлайн. https://www.cdc.gov/healthy-weight-growth/losing-weight/ Note: добавить NICE CG189, NHS.
+
+[S-053] Damms-Machado A, et al. (2012). Micronutrient deficiency in obese subjects undergoing low calorie diet. Nutr J. Тип: наблюдательное. https://pmc.ncbi.nlm.nih.gov/articles/PMC3404899/
+
+[S-054] Engel MG, et al. (2018). Micronutrient Gaps in Three Commercial Weight-Loss Diet Plans. Nutrients. Тип: аналитическое. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5793336/
+
+[S-055] (2020). Impact of Psychotropic Medication Effects on Obesity and the Metabolic Syndrome in People With Serious Mental Illness. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC7581736/ Note: сверить авторов.
+
+[S-056] Wilding JPH, et al. (2021). Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1). N Engl J Med. Тип: РКИ. https://www.nejm.org/doi/full/10.1056/NEJMoa2032183
+
+[S-057] Jastreboff AM, et al. (2022). Tirzepatide Once Weekly for the Treatment of Obesity (SURMOUNT-1). N Engl J Med. Тип: РКИ. https://www.nejm.org/doi/full/10.1056/NEJMoa2206038
+
+[S-058] (2024). Eating disorder risk during behavioral weight management in adults with overweight or obesity: A systematic review with meta-analysis. Тип: мета-анализ. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10909435/ Note: сверить авторов.
+
+[S-059] (2023). Prevalence of and risk factors for binge eating behaviour in 6930 adults starting a weight loss or maintenance programme. Тип: наблюдательное. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10270975/ Note: сверить авторов.
+
+[S-060] (2022). Adverse Changes in Body Composition During the Menopausal Transition and Relation to Cardiovascular Risk: A Contemporary Review. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC9258798/ Note: сверить авторов.
