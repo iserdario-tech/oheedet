@@ -97,3 +97,17 @@
 [S-039] Traversy G, Chaput JP. (2015). Alcohol Consumption and Obesity: An Update. Curr Obes Rep. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC4338356/
 
 [S-040] Hollands GJ, et al. (2015). Portion, package or tableware size for changing selection and consumption of food, alcohol and tobacco. Cochrane Database Syst Rev. Тип: Cochrane (72 РКИ). https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD011045.pub2/full
+
+## Волна 5 (T23–T27)
+
+[S-041] Burke LE, Wang J, Sevick MA. (2011). Self-Monitoring in Weight Loss: A Systematic Review of the Literature. J Am Diet Assoc. Тип: систематический обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC3268700/
+
+[S-042] (2020). Effect of Behavioral Weight Management Interventions Using Lifestyle mHealth Self-Monitoring on Weight Loss: A Systematic Review and Meta-Analysis. Тип: мета-анализ (20 исследований). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7400167/ Note: сверить авторов.
+
+[S-043] Beeken RJ, et al. (2017). A brief intervention for weight control based on habit-formation theory delivered through primary care (10 Top Tips): a randomised controlled trial. Int J Obes. Тип: РКИ (537 чел). https://pubmed.ncbi.nlm.nih.gov/27867204/
+
+[S-044] Madigan CD, et al. (2015). Is self-weighing an effective tool for weight loss: a systematic literature review and meta-analysis. Int J Behav Nutr Phys Act. Тип: мета-анализ. https://pmc.ncbi.nlm.nih.gov/articles/PMC4546162/
+
+[S-045] Sumithran P, et al. (2011). Long-Term Persistence of Hormonal Adaptations to Weight Loss. N Engl J Med. Тип: интервенционное (50 чел, 62 нед). https://www.nejm.org/doi/full/10.1056/NEJMoa1105816
+
+[S-046] (2021). The Influence of Mindful Eating and/or Intuitive Eating Approaches on Dietary Intake: A Systematic Review. J Acad Nutr Diet. Тип: систематический обзор. https://www.sciencedirect.com/science/article/abs/pii/S2212267220313903 Note: сверить авторов/год.
