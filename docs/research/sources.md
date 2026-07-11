@@ -143,3 +143,19 @@
 [S-059] (2023). Prevalence of and risk factors for binge eating behaviour in 6930 adults starting a weight loss or maintenance programme. Тип: наблюдательное. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10270975/ Note: сверить авторов.
 
 [S-060] (2022). Adverse Changes in Body Composition During the Menopausal Transition and Relation to Cardiovascular Risk: A Contemporary Review. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC9258798/ Note: сверить авторов.
+
+## Волна 8 (T38) + добор (T39–T40)
+
+[S-061] NCCIH (NIH). "Detoxes" and "Cleanses": What You Need To Know. Тип: официальный обзор. https://www.nccih.nih.gov/health/detoxes-and-cleanses-what-you-need-to-know
+
+[S-062] (2021). A proposed model to test the hypothesis of exercise-induced localized fat reduction (spot reduction), including a systematic review with meta-analysis. Тип: систематический обзор с мета-анализом. https://www.researchgate.net/publication/355379614 Note: сверить авторов/журнал/стабильный URL.
+
+[S-063] Obesity Supplements. StatPearls (NCBI Bookshelf, NBK576386). Тип: обзор. https://www.ncbi.nlm.nih.gov/books/NBK576386/
+
+[S-064] (2022). The Impact of Meal Timing on Risk of Weight Gain and Development of Obesity: a Review of the Current Evidence. Curr Obes Rep. Тип: обзор. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9010393/ Note: сверить авторов.
+
+[S-065] Academy of Nutrition and Dietetics. Metabolism Myths and Facts. Тип: экспертный источник. https://www.eatright.org/health/wellness/weight-and-body-positivity/metabolism-myths-and-facts
+
+[S-066] Jaworowska A, et al. (2015). Health Implications of Adults' Eating at and Living near Fast Food or Quick Service Restaurants. Nutr Diabetes. Тип: обзор. https://pmc.ncbi.nlm.nih.gov/articles/PMC4521173/ Note: сверить авторов.
+
+[S-067] Drewnowski A. (2010). The cost of US foods as related to their nutritive value. Am J Clin Nutr. Тип: аналитическое (эконом. анализ). https://pmc.ncbi.nlm.nih.gov/articles/PMC2954450/
