@@ -26,7 +26,11 @@
 | [docs/research/research-plan.md](docs/research/research-plan.md) | Методология отбора + карта тем. |
 | [docs/research/findings.md](docs/research/findings.md) | Сводка научных данных (факт → источник → уровень). |
 | [docs/research/sources.md](docs/research/sources.md) | Библиография с уровнем доказательности. |
+| [docs/product/requirements-notes.md](docs/product/requirements-notes.md) | Ранние требования к приложению. |
+| [docs/product/app-design.md](docs/product/app-design.md) | **Спек приложения (фаза 2).** |
 
 ## Статус
 **Фаза 1 (научная база) ЗАВЕРШЕНА:** 40 тем (T1–T40), 67 источников (S-001…S-067),
-раздел «Продуктовые выводы» готов. Дальше — фаза 2 (дизайн приложения). Подробности — в [CONTEXT.md](CONTEXT.md).
+раздел «Продуктовые выводы» готов.
+**Фаза 2 (дизайн) — спек готов:** [docs/product/app-design.md](docs/product/app-design.md). Дальше —
+план реализации. Подробности — в [CONTEXT.md](CONTEXT.md).
