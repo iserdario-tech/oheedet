@@ -1,0 +1,8 @@
+:root { font-family: system-ui, sans-serif; line-height: 1.4; }
+body { max-width: 760px; margin: 0 auto; padding: 16px; color: #1a1a1a; }
+.frame { color: #555; font-size: .9rem; }
+form label, fieldset { display: block; margin: 8px 0; }
+button { padding: 10px 16px; font-size: 1rem; margin-top: 12px; }
+.day { border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin: 8px 0; }
+.warn { background: #fff3cd; border: 1px solid #ffe08a; padding: 10px; border-radius: 8px; }
+@media (prefers-color-scheme: dark) { body { background:#111; color:#eee; } .day{border-color:#333;} .frame{color:#aaa;} }
