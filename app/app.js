@@ -6,8 +6,23 @@ import { buildGroceryList } from './src/grocery.js';
 import { renderResult } from './render.js';
 
 const KEY = 'oheedet';
-const form = document.getElementById('profile-form');
 
+// переключатель темы
+const root = document.documentElement;
+function syncThemeButtons() {
+  const dark = root.getAttribute('data-theme') === 'dark';
+  document.querySelectorAll('[data-theme-set]').forEach(b =>
+    b.setAttribute('aria-pressed', String(b.dataset.themeSet === (dark ? 'dark' : 'light'))));
+}
+document.querySelectorAll('[data-theme-set]').forEach(b => b.addEventListener('click', () => {
+  const t = b.dataset.themeSet;
+  if (t === 'dark') root.setAttribute('data-theme', 'dark'); else root.removeAttribute('data-theme');
+  localStorage.setItem('oheedet-theme', t);
+  syncThemeButtons();
+}));
+syncThemeButtons();
+
+const form = document.getElementById('profile-form');
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const fd = new FormData(form);

@@ -1,0 +1,58 @@
+/* oheedet · токены дизайна — «Dark Pro + Data-Dense», адаптировано под еду (теплее/воздушнее).
+   :root = светлая тема, [data-theme="dark"] = тёмная. Один индиго-акцент #5E6AD2. */
+:root {
+  /* поверхности */
+  --bg: #F7F8FA;
+  --surface: #FFFFFF;
+  --surface-2: #F1F2F5;
+  --border: #E5E7EC;
+  --border-strong: #CDD1DA;
+  /* текст */
+  --text: #1A1B20;
+  --text-muted: #616774;
+  /* акцент (индиго) */
+  --accent: #5E6AD2;
+  --accent-hover: #4C58C0;
+  --accent-soft: #ECEEFB;
+  --on-accent: #FFFFFF;
+  --focus-ring: #5E6AD2;
+  /* семантика */
+  --info: #3B57C0;         --info-soft: #ECEEFB;
+  --success: #2E7D52;      --success-soft: #E4F3EB;
+  --warning: #8A5A00;      --warning-soft: #FBF0D8;
+  --danger: #C13B3B;       --danger-soft: #FBE7E7;
+
+  /* типографика — Inter, tabular-цифры, без моно */
+  --font-ui: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-mono: var(--font-ui);
+  --text-display: 30px; --text-h1: 22px; --text-title: 18px; --text-base: 16px;
+  --text-body: 14px; --text-caption: 12px; --text-micro: 11px; --text-kpi: 24px;
+  --leading: 1.5; --tracking-heading: -0.01em;
+
+  /* форма/сетка */
+  --radius-card: 14px; --radius-control: 9px; --radius-pill: 999px;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-6: 24px; --space-8: 32px;
+
+  /* движение */
+  --motion-fast: 120ms; --motion-base: 200ms; --motion-slow: 320ms; --motion-pulse: 1.5s;
+  --ease-out: cubic-bezier(.2,.7,.3,1); --ease-spring: cubic-bezier(.2,.9,.3,1.3);
+}
+
+:root[data-theme="dark"] {
+  --bg: #0E0F13;
+  --surface: #16181D;
+  --surface-2: #1E2128;
+  --border: #2A2E37;
+  --border-strong: #3B404C;
+  --text: #E7E9EE;
+  --text-muted: #9AA0AD;
+  --accent: #6E79DB;
+  --accent-hover: #808BE6;
+  --accent-soft: #23263A;
+  --on-accent: #FFFFFF;
+  --focus-ring: #6E79DB;
+  --info: #9AA6F2;         --info-soft: #23263A;
+  --success: #6BD69B;      --success-soft: #14241C;
+  --warning: #E4B25A;      --warning-soft: #2A2212;
+  --danger: #F08A8A;       --danger-soft: #2C1717;
+}

@@ -3,24 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5E6AD2">
   <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="styles.css">
   <title>oheedet — меню под тебя</title>
+  <script>
+    // тема без мигания: из localStorage или системной
+    (function () {
+      var t = localStorage.getItem('oheedet-theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
 </head>
 <body>
-  <header><h1>oheedet</h1><p class="frame">Худеем на питании: единственный механизм — дефицит, а меню делает его комфортным. Без чудо-продуктов.</p></header>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>oheedet</h1>
+      <p class="frame">Худеем на питании: единственный механизм — дефицит, а меню делает его комфортным. Без чудо-продуктов.</p>
+    </div>
+    <div class="seg" role="group" aria-label="Тема">
+      <button type="button" data-theme-set="light">Светлая</button>
+      <button type="button" data-theme-set="dark">Тёмная</button>
+    </div>
+  </header>
+
   <main>
-    <section id="onboarding">
-      <h2>Профиль</h2>
+    <section id="onboarding" class="card">
+      <h2 style="margin-top:0">Профиль</h2>
       <form id="profile-form">
-        <label>Пол <select name="sex"><option value="m">М</option><option value="f">Ж</option></select></label>
-        <label>Возраст <input name="age" type="number" min="14" max="100" required></label>
-        <label>Рост, см <input name="heightCm" type="number" min="120" max="230" required></label>
-        <label>Вес, кг <input name="weightKg" type="number" min="35" max="300" required></label>
-        <label>Цель, кг <input name="goalWeightKg" type="number" min="35" max="300"></label>
-        <label>Активность
-          <select name="activity"><option value="low">низкая</option><option value="medium">средняя</option><option value="high">высокая</option></select></label>
-        <label>Бюджет
+        <div class="grid2">
+          <label class="field">Пол <select name="sex"><option value="m">М</option><option value="f">Ж</option></select></label>
+          <label class="field">Возраст <input name="age" type="number" min="14" max="100" required></label>
+          <label class="field">Рост, см <input name="heightCm" type="number" min="120" max="230" required></label>
+          <label class="field">Вес, кг <input name="weightKg" type="number" min="35" max="300" required></label>
+          <label class="field">Цель, кг <input name="goalWeightKg" type="number" min="35" max="300"></label>
+          <label class="field">Активность
+            <select name="activity"><option value="low">низкая</option><option value="medium">средняя</option><option value="high">высокая</option></select></label>
+        </div>
+        <label class="field">Бюджет
           <select name="budget"><option value="low">низкий</option><option value="medium" selected>средний</option></select></label>
         <fieldset><legend>Аллергии</legend>
           <label><input type="checkbox" name="allergens" value="milk">молоко</label>
@@ -30,18 +55,20 @@
         <fieldset><legend>Посуда/техника</legend>
           <label><input type="checkbox" name="cookware" value="stove" checked>плита</label>
           <label><input type="checkbox" name="cookware" value="oven">духовка</label></fieldset>
-        <label>Не люблю (через запятую) <input name="dislikes" type="text" placeholder="напр. капуста, нут"></label>
+        <label class="field">Не люблю (через запятую) <input name="dislikes" type="text" placeholder="напр. капуста, нут"></label>
         <fieldset><legend>Здоровье (скрининг)</legend>
           <label><input type="checkbox" name="conditions" value="thyroid">щитовидка</label>
           <label><input type="checkbox" name="conditions" value="pcos">СПКЯ</label>
-          <label><input type="checkbox" name="conditions" value="psych_meds">психотропные препараты</label>
-          <label>SCOFF (0–5) <input name="scoffScore" type="number" min="0" max="5" value="0"></label></fieldset>
-        <label><input type="checkbox" name="couple"> Готовим на двоих</label>
-        <button type="submit">Собрать меню на неделю</button>
+          <label><input type="checkbox" name="conditions" value="psych_meds">психотропные</label>
+          <label class="field" style="max-width:160px">SCOFF (0–5) <input name="scoffScore" type="number" min="0" max="5" value="0"></label></fieldset>
+        <fieldset><legend>Режим</legend>
+          <label><input type="checkbox" name="couple">Готовим на двоих</label></fieldset>
+        <button type="submit" class="btn primary">Собрать меню на неделю</button>
       </form>
     </section>
     <section id="result" hidden></section>
   </main>
-  <script type="module" src="app.js"></script>
+</div>
+<script type="module" src="app.js"></script>
 </body>
 </html>
