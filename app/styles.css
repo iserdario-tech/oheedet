@@ -4,6 +4,7 @@ body {
   margin: 0; background: var(--bg); color: var(--text);
   font-family: var(--font-ui); font-size: var(--text-body); line-height: var(--leading);
   -webkit-font-smoothing: antialiased;
+  accent-color: var(--accent);   /* чекбоксы/радио — индиго, а не системный цвет */
 }
 .wrap { max-width: 720px; margin: 0 auto; padding: var(--space-6) var(--space-4) 64px; }
 
