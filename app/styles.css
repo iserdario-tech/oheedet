@@ -82,7 +82,53 @@ fieldset label { flex-direction: row; align-items: center; gap: 8px; font-size: 
 .warn { background: var(--warning-soft); border: 1px solid var(--warning); color: var(--warning); padding: var(--space-3); border-radius: var(--radius-control); font-size: var(--text-caption); }
 
 /* трекер */
-#tracker label { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: var(--text-body); }
+#tracker .marks { display: flex; flex-wrap: wrap; gap: 8px var(--space-4); }
+#tracker .marks label { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: var(--text-body); }
+.w-input { display: flex; gap: var(--space-3); align-items: center; margin: var(--space-3) 0 var(--space-2); }
+.w-input input { max-width: 160px; }
 
-@media (max-width: 560px) { .targets { grid-template-columns: repeat(2, 1fr); } .grid2 { grid-template-columns: 1fr; } }
+/* подсказки под полями */
+.hint { display: block; color: var(--text-muted); font-size: var(--text-caption); line-height: 1.45; margin: 4px 0 var(--space-3); }
+.hint:last-child { margin-bottom: 0; }
+
+/* SCOFF — длинные вопросы в столбик */
+.scoff { margin-top: var(--space-2); }
+.scoff label { display: flex; width: 100%; margin: 0; padding: 5px 0; align-items: flex-start; gap: 8px; font-size: var(--text-caption); color: var(--text); }
+
+/* кликабельное блюдо в меню */
+.dish-link { font: inherit; color: var(--text); background: none; border: 0; padding: 0; text-align: left; cursor: pointer; border-bottom: 1px dashed var(--border-strong); }
+.dish-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.dish-link:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+/* модалка рецепта */
+.modal { max-width: 520px; width: calc(100% - var(--space-6)); max-height: 82vh; overflow: auto; border: 1px solid var(--border-strong); border-radius: var(--radius-card); background: var(--surface); color: var(--text); padding: var(--space-5); }
+.modal::backdrop { background: rgba(0,0,0,.5); }
+.modal-close { float: right; font: inherit; font-size: var(--text-caption); color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 4px 12px; cursor: pointer; }
+.modal-close:hover { color: var(--accent); border-color: var(--accent); }
+.modal h3 { margin: 0 0 var(--space-2); font-size: var(--text-h1); }
+.modal h4 { margin: var(--space-4) 0 var(--space-1); font-size: var(--text-caption); text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); }
+.modal .r-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+.modal .r-macros { color: var(--text-muted); font-size: var(--text-caption); margin: var(--space-3) 0 0; font-variant-numeric: tabular-nums; }
+.modal ul, .modal ol { margin: var(--space-1) 0 0; padding-left: 20px; }
+.modal li { padding: 3px 0; line-height: 1.5; }
+.modal ol li { color: var(--text); }
+
+/* сладкое */
+h3.sub { font-size: var(--text-caption); font-weight: 600; letter-spacing: .04em; color: var(--text-muted); margin: var(--space-5) 0 var(--space-2); text-transform: none; }
+.treat-note { color: var(--text); font-size: var(--text-caption); line-height: 1.5; }
+.treats { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+.treat-card { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; cursor: pointer; font: inherit; color: var(--text); }
+.treat-card b { font-size: var(--text-base); }
+.treat-card:hover { border-color: var(--accent); }
+.treat-card:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+/* график веса */
+.chart { width: 100%; height: auto; display: block; }
+.ch-line { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.ch-dot { fill: var(--accent); }
+.ch-goal { stroke: var(--success); stroke-width: 1.5; stroke-dasharray: 4 4; }
+.ch-goal-t { fill: var(--success); font-size: 10px; }
+.ch-last { fill: var(--text); font-size: 11px; font-weight: 600; }
+
+@media (max-width: 560px) { .targets { grid-template-columns: repeat(2, 1fr); } .grid2 { grid-template-columns: 1fr; } .treats { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }

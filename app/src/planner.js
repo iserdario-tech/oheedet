@@ -7,6 +7,7 @@ export function filterRecipes(recipes, c = {}) {
   const dislikes = (c.dislikes ?? []).map(x => String(x).toLowerCase());
   const cookware = new Set(c.cookware ?? []);
   const budgetMax = BUDGET_RANK[c.budget ?? 'high'];
+  const cuisines = c.cuisines ?? [];   // пусто = все кухни
   return recipes.filter(r => {
     if ((r.allergens ?? []).some(a => allergens.has(a))) return false;
     const hay = (r.name + ' ' + (r.tags ?? []).join(' ')).toLowerCase();
@@ -15,6 +16,8 @@ export function filterRecipes(recipes, c = {}) {
     if (dislikes.some(d => d && hay.includes(d.length > 5 ? d.slice(0, -2) : d))) return false;
     if ((r.cookware ?? []).some(w => !cookware.has(w))) return false;
     if (BUDGET_RANK[r.cost_tier ?? 'medium'] > budgetMax) return false;
+    // мягкий фильтр кухни: universal проходит всегда и покрывает все слоты → план не пустеет
+    if (cuisines.length && r.cuisine !== 'universal' && !cuisines.includes(r.cuisine)) return false;
     return true;
   });
 }

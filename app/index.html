@@ -45,24 +45,76 @@
           <label class="field">Активность
             <select name="activity"><option value="low">низкая</option><option value="medium">средняя</option><option value="high">высокая</option></select></label>
         </div>
+        <small class="hint">Возраст влияет на результат: с годами тело тратит меньше — приложение это учитывает.</small>
+        <small class="hint"><b>Активность</b> — это про образ жизни, не про спорт. Низкая — сидячая работа; средняя — много на ногах и ходьбы; высокая — физический труд.</small>
+
         <label class="field">Бюджет
           <select name="budget"><option value="low">низкий</option><option value="medium" selected>средний</option></select></label>
+        <small class="hint">Низкий бюджет уберёт дорогие продукты (лосось, говядина, орехи) и оставит дешёвые — курицу, яйца, крупы, бобовые.</small>
+
+        <fieldset><legend>Кухни (необязательно)</legend>
+          <label><input type="checkbox" name="cuisines" value="mediterranean">средиземноморская</label>
+          <label><input type="checkbox" name="cuisines" value="asian">азиатская</label>
+          <label><input type="checkbox" name="cuisines" value="middleeast">ближневосточная</label>
+          <label><input type="checkbox" name="cuisines" value="slavic">славянская</label>
+          <small class="hint">Оставь пустым — будут все. Отметишь — меню соберётся из выбранных (плюс универсальные блюда).</small></fieldset>
+
         <fieldset><legend>Аллергии</legend>
           <label><input type="checkbox" name="allergens" value="milk">молоко</label>
           <label><input type="checkbox" name="allergens" value="egg">яйца</label>
           <label><input type="checkbox" name="allergens" value="fish">рыба</label>
-          <label><input type="checkbox" name="allergens" value="gluten">глютен</label></fieldset>
+          <label><input type="checkbox" name="allergens" value="gluten">глютен</label>
+          <label><input type="checkbox" name="allergens" value="nuts">орехи</label>
+          <label><input type="checkbox" name="allergens" value="soy">соя</label>
+          <small class="hint">Что отметишь — жёстко исключим из всех блюд.</small></fieldset>
+
         <fieldset><legend>Посуда/техника</legend>
           <label><input type="checkbox" name="cookware" value="stove" checked>плита</label>
-          <label><input type="checkbox" name="cookware" value="oven">духовка</label></fieldset>
+          <label><input type="checkbox" name="cookware" value="oven">духовка</label>
+          <small class="hint">Отметь то, что у тебя есть. Рецепты, которым нужна недоступная техника, не попадут в меню.</small></fieldset>
+
         <label class="field">Не люблю (через запятую) <input name="dislikes" type="text" placeholder="напр. капуста, нут"></label>
-        <fieldset><legend>Здоровье (скрининг)</legend>
-          <label><input type="checkbox" name="conditions" value="thyroid">щитовидка</label>
-          <label><input type="checkbox" name="conditions" value="pcos">СПКЯ</label>
-          <label><input type="checkbox" name="conditions" value="psych_meds">психотропные</label>
-          <label class="field" style="max-width:160px">SCOFF (0–5) <input name="scoffScore" type="number" min="0" max="5" value="0"></label></fieldset>
+        <small class="hint">Перечисли нелюбимые продукты — блюда с ними уберём.</small>
+
+        <fieldset><legend>Здоровье — не диагноз, а страховка</legend>
+          <small class="hint">Если что-то из этого есть, приложение мягче снизит калории и посоветует показать план врачу. Ничего не отмечено — работаем как обычно.</small>
+          <label><input type="checkbox" name="conditions" value="thyroid">проблемы со щитовидкой</label>
+          <label><input type="checkbox" name="conditions" value="pcos">СПКЯ (синдром поликистозных яичников)</label>
+          <label><input type="checkbox" name="conditions" value="psych_meds">принимаю психотропные лекарства</label>
+          <div class="scoff">
+            <small class="hint" style="display:block">Отметь то, что про тебя (это короткий проверенный опросник о питании):</small>
+            <label><input type="checkbox" name="scoff">Бывает, что специально вызываю рвоту, когда переел</label>
+            <label><input type="checkbox" name="scoff">Бывает, что теряю контроль над тем, сколько ем</label>
+            <label><input type="checkbox" name="scoff">Похудел(а) больше чем на ~6 кг за 3 месяца сам(а) по себе</label>
+            <label><input type="checkbox" name="scoff">Считаю себя полным(ой), когда другие говорят, что я худой(ая)</label>
+            <label><input type="checkbox" name="scoff">Еда занимает главное место в моих мыслях и дне</label>
+          </div></fieldset>
+
         <fieldset><legend>Режим</legend>
-          <label><input type="checkbox" name="couple">Готовим на двоих</label></fieldset>
+          <label><input type="checkbox" name="couple" id="couple-toggle">Готовим на двоих</label>
+          <small class="hint">Включи — появятся поля партнёра. Ужин будет общий (готовите один раз), а порции и калории — под каждого свои.</small>
+        </fieldset>
+
+        <fieldset id="partner" hidden><legend>Профиль партнёра</legend>
+          <div class="grid2">
+            <label class="field">Пол <select name="sex2"><option value="f">Ж</option><option value="m">М</option></select></label>
+            <label class="field">Возраст <input name="age2" type="number" min="14" max="100"></label>
+            <label class="field">Рост, см <input name="heightCm2" type="number" min="120" max="230"></label>
+            <label class="field">Вес, кг <input name="weightKg2" type="number" min="35" max="300"></label>
+            <label class="field">Цель, кг <input name="goalWeightKg2" type="number" min="35" max="300"></label>
+            <label class="field">Активность
+              <select name="activity2"><option value="low">низкая</option><option value="medium">средняя</option><option value="high">высокая</option></select></label>
+          </div>
+          <label class="field">Партнёр не любит (через запятую) <input name="dislikes2" type="text" placeholder="напр. грибы"></label>
+          <div><small class="hint">Аллергии партнёра:</small>
+            <label><input type="checkbox" name="allergens2" value="milk">молоко</label>
+            <label><input type="checkbox" name="allergens2" value="egg">яйца</label>
+            <label><input type="checkbox" name="allergens2" value="fish">рыба</label>
+            <label><input type="checkbox" name="allergens2" value="gluten">глютен</label>
+            <label><input type="checkbox" name="allergens2" value="nuts">орехи</label>
+            <label><input type="checkbox" name="allergens2" value="soy">соя</label></div>
+        </fieldset>
+
         <button type="submit" class="btn primary">Собрать меню на неделю</button>
       </form>
     </section>

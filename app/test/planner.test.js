@@ -26,6 +26,18 @@ test('нелюбимое ловит русские словоформы (кап�
   assert.equal(f.length, 0);
 });
 
+test('фильтр кухни: выбор оставляет выбранную + universal, но не роняет план', () => {
+  const RR = [
+    { id:'bu', name:'Завтрак-универ', meal_type:'breakfast', kcal:300, protein_g:22, fiber_g:4, cost_tier:'low', cookware:['stove'], allergens:[], cuisine:'universal', ingredients:[] },
+    { id:'ba', name:'Завтрак-азия', meal_type:'breakfast', kcal:300, protein_g:22, fiber_g:4, cost_tier:'low', cookware:['stove'], allergens:[], cuisine:'asian', ingredients:[] },
+    { id:'bm', name:'Завтрак-медит', meal_type:'breakfast', kcal:300, protein_g:22, fiber_g:4, cost_tier:'low', cookware:['stove'], allergens:[], cuisine:'mediterranean', ingredients:[] },
+  ];
+  const f = filterRecipes(RR, { cuisines:['asian'], cookware:['stove'] });
+  assert.ok(f.some(r => r.id === 'ba'), 'азиатский должен остаться');
+  assert.ok(f.some(r => r.id === 'bu'), 'universal остаётся всегда (страховка от пустого слота)');
+  assert.ok(!f.some(r => r.id === 'bm'), 'средиземноморский отфильтрован');
+});
+
 test('generateWeek: 7 дней, ужин в 18:00, калораж в пределах ±15%', () => {
   const week = generateWeek(targets, R, { cookware:['stove','oven'] });
   assert.equal(week.length, 7);
