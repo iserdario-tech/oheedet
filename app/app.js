@@ -89,3 +89,8 @@ coupleToggle.addEventListener('change', () => {
 // восстановление сессии
 const saved = localStorage.getItem(KEY);
 if (saved) renderResult(JSON.parse(saved));
+
+// PWA: офлайн через service worker (нужен https или localhost)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}
