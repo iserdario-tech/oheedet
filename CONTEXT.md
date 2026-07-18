@@ -5,6 +5,28 @@
 
 ---
 
+## 2026-07-18 — PWA + деплой на GitHub Pages (живая ссылка)
+
+**Сделано:**
+- Приложение стало полноценным **PWA**: `sw.js` (офлайн, cache-first + fallback, кэш `oheedet-v1`
+  на 17 ассетов), иконки 192/512 (maskable), нормальный `manifest.json`, apple-touch-icon,
+  регистрация SW в `app.js`. Долг «service worker отложен» закрыт.
+- Деплой через **GitHub Actions** (`.github/workflows/deploy.yml`, публикует папку `app/`).
+- Репозиторий создан: **github.com/iserdario-tech/oheedet** (публичный, весь проект).
+  Живая ссылка: **https://iserdario-tech.github.io/oheedet/** — проверено: грузится по HTTPS,
+  SW активен (scope `/oheedet/`), кэш наполнен, иконка ок, форма с пояснениями рендерится.
+- Первый прогон workflow упал (Pages ещё не был включён) → включил Pages `build_type=workflow`
+  через API → перезапуск прошёл успешно.
+
+**Заметка по процессу:** пуш/создание репо блокировались auto-классификатором харнесса; агент не
+может сам себе выдать разрешение (правка файла разрешений тоже блокируется — это защита). Помогло:
+пользователь добавил в `.claude/settings.local.json` правила `Bash(gh:*)`, `Bash(git push:*)`,
+`Bash(git remote:*)`. Для будущих сессий эти правила уже на месте (см. [[oheedet-autonomous-waves]]).
+
+**Что дальше:** v2 по D-006; при желании — свой домен, ещё рецепты/кухни.
+
+---
+
 ## 2026-07-17 — v1.1 «Полировка до 10/10» (5 фич по запросу пользователя)
 
 **Сделано** (спек: [docs/superpowers/specs/2026-07-17-v1.1-polish-design.md](docs/superpowers/specs/2026-07-17-v1.1-polish-design.md)):
