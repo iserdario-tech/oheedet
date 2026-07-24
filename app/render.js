@@ -112,7 +112,9 @@ export function renderResult(state) {
   const body = el.querySelector('#rmodal-body');
   const rerender = () => { const y = window.scrollY; save(state); renderResult(state); window.scrollTo(0, y); };
 
-  el.addEventListener('click', e => {
+  // onclick-присваивание, а не addEventListener: #result переживает перерисовку,
+  // и слушатели копились бы с каждой заменой (2→4→8 обработчиков на клик).
+  el.onclick = e => {
     const dishBtn = e.target.closest('[data-rid]');
     if (dishBtn) { const r = recipeMap.get(dishBtn.dataset.rid); if (r) { body.innerHTML = recipeDetail(r); modal.showModal(); } return; }
 
@@ -130,7 +132,7 @@ export function renderResult(state) {
       rerender();
       return;
     }
-  });
+  };
   modal.querySelector('.modal-close').addEventListener('click', () => modal.close());
   modal.addEventListener('click', e => { if (e.target === modal) modal.close(); });
 
