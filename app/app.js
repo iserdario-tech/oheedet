@@ -2,7 +2,7 @@ import { computeTargets } from './src/targets.js';
 import { applySafety } from './src/safety.js';
 import { generateWeek, filterRecipes } from './src/planner.js';
 import { generateCoupleWeek } from './src/couple.js';
-import { buildGroceryList } from './src/grocery.js';
+import { groceryFromPlan } from './src/grocery.js';
 import { renderResult } from './render.js';
 
 const KEY = 'oheedet';
@@ -62,16 +62,16 @@ form.addEventListener('submit', async (e) => {
       allergens: [...new Set([...constraints.allergens, ...fd.getAll('allergens2')])],
       dislikes: [...constraints.dislikes, ...csv(fd.get('dislikes2'))],
     };
-    plan = { couple: true, ...generateCoupleWeek(safe, safeB, recipes, effectiveC) };
+    plan = { couple: true, safeB, ...generateCoupleWeek(safe, safeB, recipes, effectiveC) };
   } else {
     plan = { couple: false, a: generateWeek(safe, recipes, constraints) };
   }
 
-  // десерты — по тем же аллергиям/бюджету, но без фильтра кухни (лакомство внекухонное)
-  const desserts = filterRecipes(recipes, { ...effectiveC, cuisines: [] }).filter(r => r.meal_type === 'dessert');
+  // пул для замены блюд (те же фильтры, что и у меню); десерты уже вплетены в дни планировщиком
+  const pool = filterRecipes(recipes, effectiveC);
 
-  const grocery = buildGroceryList(plan.couple ? [...plan.a, ...plan.b] : plan.a);
-  const state = { profile, constraints, screen, safe, plan, grocery, desserts, treats, progress: {} };
+  const grocery = groceryFromPlan(plan);
+  const state = { profile, constraints, screen, safe, plan, pool, grocery, treats, progress: {} };
   localStorage.setItem(KEY, JSON.stringify(state));
   renderResult(state);
 });

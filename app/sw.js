@@ -1,6 +1,6 @@
 // oheedet PWA service worker — офлайн через cache-first + runtime-кэш.
 // Версию кэша бампать при изменении статики (иначе старьё останется у установленных).
-const CACHE = 'oheedet-v1';
+const CACHE = 'oheedet-v3';
 const ASSETS = [
   './', './index.html', './app.js', './render.js', './tracker.js',
   './tokens.css', './styles.css', './manifest.json',

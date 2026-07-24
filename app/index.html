@@ -51,9 +51,13 @@
         <small class="hint">Возраст влияет на результат: с годами тело тратит меньше — приложение это учитывает.</small>
         <small class="hint"><b>Активность</b> — это про образ жизни, не про спорт. Низкая — сидячая работа; средняя — много на ногах и ходьбы; высокая — физический труд.</small>
 
-        <label class="field">Бюджет
-          <select name="budget"><option value="low">низкий</option><option value="medium" selected>средний</option></select></label>
-        <small class="hint">Низкий бюджет уберёт дорогие продукты (лосось, говядина, орехи) и оставит дешёвые — курицу, яйца, крупы, бобовые.</small>
+        <label class="field">Бюджет на еду
+          <select name="budget">
+            <option value="small">Маленький — курица, яйца, крупы, бобовые</option>
+            <option value="medium" selected>Средний — плюс говядина, сыр, тунец</option>
+            <option value="large">Большой — плюс лосось и премиум</option>
+          </select></label>
+        <small class="hint">Уровень меняет <b>набор блюд</b> (продукты подешевле/подороже). Реальную цену покажем в ₽ по каждому дню и за неделю. Честно: здоровая белковая еда выходит ≈750–800 ₽/день на любом уровне — цель по белку задаёт объём продуктов, а не бюджет.</small>
 
         <fieldset><legend>Кухни (необязательно)</legend>
           <label><input type="checkbox" name="cuisines" value="mediterranean">средиземноморская</label>
@@ -74,7 +78,18 @@
         <fieldset><legend>Посуда/техника</legend>
           <label><input type="checkbox" name="cookware" value="stove" checked>плита</label>
           <label><input type="checkbox" name="cookware" value="oven">духовка</label>
-          <small class="hint">Отметь то, что у тебя есть. Рецепты, которым нужна недоступная техника, не попадут в меню.</small></fieldset>
+          <label><input type="checkbox" name="cookware" value="microwave">микроволновка</label>
+          <label><input type="checkbox" name="cookware" value="blender">блендер</label>
+          <label><input type="checkbox" name="cookware" value="immersion_blender">погружной блендер</label>
+          <label><input type="checkbox" name="cookware" value="multicooker">мультиварка</label>
+          <label><input type="checkbox" name="cookware" value="grill_pan">сковорода-гриль</label>
+          <label><input type="checkbox" name="cookware" value="airfryer">аэрогриль / электрогриль</label>
+          <label><input type="checkbox" name="cookware" value="steamer">пароварка</label>
+          <label><input type="checkbox" name="cookware" value="toaster">тостер</label>
+          <label><input type="checkbox" name="cookware" value="mixer">миксер</label>
+          <label><input type="checkbox" name="cookware" value="scale">кухонные весы</label>
+          <label><input type="checkbox" name="cookware" value="freezer">морозилка</label>
+          <small class="hint">Отметь, что есть дома. Блюда, которым нужна недоступная техника, в меню не попадут. Плита нужна большинству рецептов.</small></fieldset>
 
         <label class="field">Не люблю (через запятую) <input name="dislikes" type="text" placeholder="напр. капуста, нут"></label>
         <small class="hint">Перечисли нелюбимые продукты — блюда с ними уберём.</small>

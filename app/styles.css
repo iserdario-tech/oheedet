@@ -113,14 +113,31 @@ fieldset label { flex-direction: row; align-items: center; gap: 8px; font-size: 
 .modal li { padding: 3px 0; line-height: 1.5; }
 .modal ol li { color: var(--text); }
 
-/* сладкое */
-h3.sub { font-size: var(--text-caption); font-weight: 600; letter-spacing: .04em; color: var(--text-muted); margin: var(--space-5) 0 var(--space-2); text-transform: none; }
-.treat-note { color: var(--text); font-size: var(--text-caption); line-height: 1.5; }
-.treats { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
-.treat-card { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; cursor: pointer; font: inherit; color: var(--text); }
-.treat-card b { font-size: var(--text-base); }
-.treat-card:hover { border-color: var(--accent); }
-.treat-card:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+/* десерт-пилюля в меню дня */
+.badge.treat-tag { background: var(--success-soft); color: var(--success); }
+
+/* кнопки замены блюда/дня */
+.swap-btn { margin-left: 6px; font: inherit; font-size: var(--text-caption); color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 2px 8px; cursor: pointer; line-height: 1.4; }
+.swap-btn:hover { color: var(--accent); border-color: var(--accent); }
+.swap-btn.day { margin-left: auto; }
+.meals .swap-btn { flex: none; }
+
+/* список покупок по дням */
+.gday { padding: var(--space-3) var(--space-4); }
+.gday-head { display: flex; align-items: baseline; gap: var(--space-3); margin-bottom: var(--space-2); }
+.gday-head .macros { margin-left: auto; }
+.perish { font-size: var(--text-caption); color: var(--warning); background: var(--warning-soft); border-radius: var(--radius-control); padding: 6px 10px; margin-bottom: var(--space-2); }
+.dot-fresh { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--warning); margin-right: 7px; vertical-align: middle; }
+.full-list summary, .treats-box summary { cursor: pointer; color: var(--text-muted); font-size: var(--text-caption); padding: var(--space-2) 0; }
+
+/* покупное сладкое (аккуратные строки вместо съехавшего текста) */
+.treat-list { display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-2); }
+.treat-row { border: 1px solid var(--border); border-radius: var(--radius-control); padding: var(--space-3); }
+.treat-main { display: flex; align-items: center; gap: var(--space-3); }
+.treat-main b { font-size: var(--text-base); }
+.treat-main .badge { margin-left: auto; }
+.treat-sub { color: var(--text-muted); font-size: var(--text-caption); margin-top: 2px; }
+.treat-note { color: var(--text-muted); font-size: var(--text-caption); margin-top: 4px; line-height: 1.45; }
 
 /* график веса */
 .chart { width: 100%; height: auto; display: block; }
@@ -130,5 +147,5 @@ h3.sub { font-size: var(--text-caption); font-weight: 600; letter-spacing: .04em
 .ch-goal-t { fill: var(--success); font-size: 10px; }
 .ch-last { fill: var(--text); font-size: 11px; font-weight: 600; }
 
-@media (max-width: 560px) { .targets { grid-template-columns: repeat(2, 1fr); } .grid2 { grid-template-columns: 1fr; } .treats { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .targets { grid-template-columns: repeat(2, 1fr); } .grid2 { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
