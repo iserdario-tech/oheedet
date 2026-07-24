@@ -25,6 +25,10 @@ syncThemeButtons();
 const form = document.getElementById('profile-form');
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
+  const submitBtn = form.querySelector('button[type=submit]');
+  const submitText = submitBtn.textContent;
+  submitBtn.disabled = true; submitBtn.textContent = 'Собираю меню…';
+  try {
   const fd = new FormData(form);
   const [recipes, treats] = await Promise.all([
     fetch('data/recipes.json').then(r => r.json()),
@@ -74,6 +78,9 @@ form.addEventListener('submit', async (e) => {
   const state = { profile, constraints, screen, safe, plan, pool, grocery, treats, progress: {} };
   localStorage.setItem(KEY, JSON.stringify(state));
   renderResult(state);
+  } finally {
+    submitBtn.disabled = false; submitBtn.textContent = submitText;
+  }
 });
 
 // блок партнёра: показываем и делаем поля обязательными только при режиме «на двоих»

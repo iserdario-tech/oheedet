@@ -48,14 +48,14 @@ export function renderResult(state) {
       <button class="dish-link" data-rid="${m.recipe.id}">${m.recipe.name}</button>
       ${m.slot === 'dessert' ? '<span class="badge treat-tag">десерт</span>' : ''}
       <span class="serv">×${m.servings}</span>
-      ${swap ? `<button class="swap-btn" title="Заменить блюдо" data-swap-dish="${di}:${mi}">↻</button>` : ''}
+      ${swap ? `<button class="swap-btn" aria-label="Заменить блюдо: ${m.recipe.name}" title="Заменить блюдо" data-swap-dish="${di}:${mi}">↻</button>` : ''}
     </li>`;
 
   const dayHtml = (day, i, swap) => `
     <div class="day card">
       <div class="day-head"><b>День ${i + 1}</b>
         <span class="macros">${day.totals.kcal} ккал · Б ${day.totals.protein} · Кл ${day.totals.fiber}</span>
-        ${swap ? `<button class="swap-btn day" title="Заменить все блюда дня" data-swap-day="${i}">↻ день</button>` : ''}</div>
+        ${swap ? `<button class="swap-btn day" aria-label="Заменить все блюда дня ${i + 1}" title="Заменить все блюда дня" data-swap-day="${i}">↻ день</button>` : ''}</div>
       <ul class="meals">${day.meals.map((m, mi) => mealHtml(m, i, mi, swap)).join('')}</ul>
     </div>`;
 

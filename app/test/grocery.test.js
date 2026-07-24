@@ -17,7 +17,6 @@ test('агрегирует одинаковый ингредиент по нед
   const g = buildGroceryList(week);
   const chicken = g.items.find(i => i.name === 'куриное филе');
   assert.equal(chicken.qty, 250);              // 100*1.5 + 100*1
-  assert.ok(g.estCost > 0);
 });
 
 test('список по дням + бюджет в ₽', () => {

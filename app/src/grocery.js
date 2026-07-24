@@ -1,4 +1,3 @@
-const COST = { low: 1, medium: 2, high: 3 };
 // свежие категории — скоропорт; консервы/заморозка/сушёное хранятся долго
 const FRESH = new Set(['мясо/рыба', 'молочное', 'яйца', 'овощи/фрукты']);
 function isPerishable(ing) {
@@ -12,7 +11,7 @@ function aggregate(meals) {
   for (const m of meals) {
     for (const ing of (m.recipe.ingredients ?? [])) {
       const key = (ing.name + '|' + ing.unit).toLowerCase().trim();   // канонизация → без дублей яйцо/яйца
-      const prev = map.get(key) ?? { name: ing.name, unit: ing.unit, qty: 0, category: ing.category, costTier: ing.costTier, perishable: isPerishable(ing) };
+      const prev = map.get(key) ?? { name: ing.name, unit: ing.unit, qty: 0, category: ing.category, perishable: isPerishable(ing) };
       prev.qty += ing.qty * (m.servings ?? 1);
       map.set(key, prev);
     }
@@ -27,13 +26,12 @@ const costRub = meals => Math.round(meals.reduce((s, m) => s + (m.recipe.cost_ru
 // week: массив дней вида { meals: [...] }
 export function buildGroceryList(week) {
   const items = aggregate(week.flatMap(d => d.meals));                 // общий список (без дублей)
-  const estCost = Math.round(items.reduce((s, i) => s + (COST[i.costTier] ?? 2) * i.qty, 0)); // legacy-прокси
   const byDay = week.map((d, i) => {
     const dayItems = aggregate(d.meals);
     return { day: i + 1, items: dayItems, estCostRub: costRub(d.meals), hasPerishable: dayItems.some(x => x.perishable) };
   });
   const estCostRub = byDay.reduce((s, d) => s + d.estCostRub, 0);
-  return { items, estCost, estCostRub, byDay };
+  return { items, estCostRub, byDay };
 }
 
 // покупки из плана: для пары объединяем день i обоих в один поход

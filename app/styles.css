@@ -15,7 +15,7 @@ header h1 { font-size: var(--text-h1); font-weight: 700; letter-spacing: var(--t
 
 /* переключатель темы */
 .seg { display: inline-flex; border: 1px solid var(--border-strong); border-radius: var(--radius-control); overflow: hidden; margin-left: auto; flex: none; }
-.seg button { font-family: inherit; font-size: var(--text-caption); font-weight: 500; padding: 6px 12px; border: 0; background: var(--surface); color: var(--text-muted); cursor: pointer; }
+.seg button { font-family: inherit; font-size: var(--text-caption); font-weight: 500; padding: 10px 14px; min-height: 40px; border: 0; background: var(--surface); color: var(--text-muted); cursor: pointer; }
 .seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 
 /* карточки */
@@ -28,7 +28,7 @@ form fieldset { border: 1px solid var(--border); border-radius: var(--radius-con
 form legend { font-size: var(--text-caption); font-weight: 600; color: var(--text-muted); padding: 0 6px; }
 .label, form > label { font-size: var(--text-caption); color: var(--text-muted); }
 input[type="number"], input[type="text"], select {
-  font-family: inherit; font-size: var(--text-body); padding: 9px 12px; width: 100%;
+  font-family: inherit; font-size: var(--text-base); padding: 11px 12px; width: 100%; min-height: 44px;
   border: 1px solid var(--border-strong); border-radius: var(--radius-control);
   background: var(--surface); color: var(--text);
 }
@@ -56,7 +56,7 @@ fieldset label { flex-direction: row; align-items: center; gap: 8px; font-size: 
 .day .day-head b { font-size: var(--text-base); }
 .day .macros { margin-left: auto; color: var(--text-muted); font-size: var(--text-caption); font-variant-numeric: tabular-nums; }
 .meals { list-style: none; margin: 0; padding: 0; }
-.meals li { display: flex; align-items: center; gap: var(--space-3); padding: 7px 0; border-top: 1px solid var(--border); }
+.meals li { display: flex; align-items: center; gap: var(--space-3); min-height: 44px; padding: 4px 0; border-top: 1px solid var(--border); }
 .meals li:first-child { border-top: 0; }
 .meals .serv { margin-left: auto; color: var(--text-muted); font-size: var(--text-caption); font-variant-numeric: tabular-nums; }
 
@@ -96,14 +96,15 @@ fieldset label { flex-direction: row; align-items: center; gap: 8px; font-size: 
 .scoff label { display: flex; width: 100%; margin: 0; padding: 5px 0; align-items: flex-start; gap: 8px; font-size: var(--text-caption); color: var(--text); }
 
 /* кликабельное блюдо в меню */
-.dish-link { font: inherit; color: var(--text); background: none; border: 0; padding: 0; text-align: left; cursor: pointer; border-bottom: 1px dashed var(--border-strong); }
-.dish-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.dish-link { font: inherit; color: var(--text); background: none; border: 0; padding: 2px 0; min-height: 44px; display: inline-flex; align-items: center; text-align: left; cursor: pointer; touch-action: manipulation;
+  text-decoration: underline dashed var(--border-strong); text-underline-offset: 3px; }
+.dish-link:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .dish-link:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
 
 /* модалка рецепта */
 .modal { max-width: 520px; width: calc(100% - var(--space-6)); max-height: 82vh; overflow: auto; border: 1px solid var(--border-strong); border-radius: var(--radius-card); background: var(--surface); color: var(--text); padding: var(--space-5); }
 .modal::backdrop { background: rgba(0,0,0,.5); }
-.modal-close { float: right; font: inherit; font-size: var(--text-caption); color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 4px 12px; cursor: pointer; }
+.modal-close { float: right; font: inherit; font-size: var(--text-caption); color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); min-height: 40px; padding: 9px 14px; cursor: pointer; touch-action: manipulation; }
 .modal-close:hover { color: var(--accent); border-color: var(--accent); }
 .modal h3 { margin: 0 0 var(--space-2); font-size: var(--text-h1); }
 .modal h4 { margin: var(--space-4) 0 var(--space-1); font-size: var(--text-caption); text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); }
@@ -117,8 +118,9 @@ fieldset label { flex-direction: row; align-items: center; gap: 8px; font-size: 
 .badge.treat-tag { background: var(--success-soft); color: var(--success); }
 
 /* кнопки замены блюда/дня */
-.swap-btn { margin-left: 6px; font: inherit; font-size: var(--text-caption); color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); padding: 2px 8px; cursor: pointer; line-height: 1.4; }
+.swap-btn { margin-left: 8px; font: inherit; font-size: var(--text-caption); color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--radius-pill); min-height: 40px; min-width: 40px; padding: 8px 12px; cursor: pointer; touch-action: manipulation; }
 .swap-btn:hover { color: var(--accent); border-color: var(--accent); }
+.swap-btn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
 .swap-btn.day { margin-left: auto; }
 .meals .swap-btn { flex: none; }
 
