@@ -93,9 +93,18 @@ coupleToggle.addEventListener('change', () => {
   });
 });
 
-// восстановление сессии
+// восстановление сессии; несовместимое старое состояние (после обновления) не должно ломать экран
 const saved = localStorage.getItem(KEY);
-if (saved) renderResult(JSON.parse(saved));
+if (saved) {
+  try {
+    renderResult(JSON.parse(saved));
+  } catch (err) {
+    localStorage.removeItem(KEY);                 // сбрасываем устаревшее состояние
+    document.getElementById('onboarding').hidden = false;
+    document.getElementById('result').hidden = true;
+    console.warn('Старое состояние сброшено:', err);
+  }
+}
 
 // PWA: офлайн через service worker (нужен https или localhost)
 if ('serviceWorker' in navigator) {
